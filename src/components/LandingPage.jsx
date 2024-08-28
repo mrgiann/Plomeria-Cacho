@@ -33,7 +33,7 @@ export default function LandingPage() {
     >
       <header className="bg-white dark:bg-gray-800 py-4 flex flex-col items-center">
         {/* Botón para alternar modo oscuro */}
-        <button
+  {/*       <button
           onClick={toggleDarkMode}
           className="absolute top-8 right-12 p-4 text-gray-900 dark:text-gray-100"
         >
@@ -42,11 +42,11 @@ export default function LandingPage() {
           ) : (
             <FaMoon className="text-3xl" /> // Ajusta el tamaño aquí
           )}
-        </button>
+        </button> */}
         <div className="w-full flex flex-col items-center">
           {/* Logo */}
           <div className="w-full flex justify-center">
-            <img src={Logo} alt="Logo" className="h-auto max-h-96" />
+            <img src={Logo} alt="Logo" className="h-auto max-h-96 drop-shadow-[4px_4px_6px_rgba(0,0,0,0.7)]" />
           </div>
 
           {/* Texto debajo del logo */}
@@ -110,7 +110,7 @@ export default function LandingPage() {
               href="https://wa.me/542235297819"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+              className="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-green-600 hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
             >
               <FaWhatsapp className="mr-3 text-3xl" />
               WhatsApp
@@ -119,7 +119,7 @@ export default function LandingPage() {
               href="https://www.instagram.com/plomeriacacho"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+              className="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
             >
               <FaInstagram className="mr-3 text-3xl" />
               Instagram

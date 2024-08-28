@@ -26,3 +26,4 @@ dist-ssr
 # Entorno de desarrollo opcional
 .env
 example.env
+.vercel
