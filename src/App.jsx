@@ -1,13 +1,10 @@
 import React from "react";
+import LandingPage from './components/LandingPage';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <div className="App">
-        {/* Aquí irán los componentes como Navbar, Footer, etc. */}
-      </div>
-    </>
-  );
-};
+    <LandingPage />
+  )
+}
 
 export default App;
