@@ -8,20 +8,20 @@ import {
   FaUtensils,
   FaTemperatureHigh,
   FaTint,
-  FaMoon,
-  FaSun,
+  /*   FaMoon,
+  FaSun, */
 } from "react-icons/fa";
 import Logo from "../assets/logo-sin-slogan.svg";
 
 export default function LandingPage() {
-  const [darkMode, setDarkMode] = useState(
+  const [darkMode /* setDarkMode */] = useState(
     () => window.matchMedia("(prefers-color-scheme: dark)").matches
   );
 
-  const toggleDarkMode = () => {
+  /*   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle("dark", !darkMode);
-  };
+  }; */
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
@@ -31,9 +31,9 @@ export default function LandingPage() {
     <div
       className={`min-h-screen ${darkMode ? "dark" : ""} bg-white dark:bg-gray-900`}
     >
-      <header className="bg-white dark:bg-gray-800 py-4 flex flex-col items-center">
-        {/* Botón para alternar modo oscuro */}
-  {/*       <button
+      <header className="bg-white dark:bg-gray-600 py-4 flex flex-col items-center">
+        {/* Botón para alternar modo oscuro, oculté los botones porque ocupaba mucho lugar en modo movile y ya se escoge un modo según preferencia del usuario de forma automatica */}
+        {/*       <button
           onClick={toggleDarkMode}
           className="absolute top-8 right-12 p-4 text-gray-900 dark:text-gray-100"
         >
@@ -43,10 +43,14 @@ export default function LandingPage() {
             <FaMoon className="text-3xl" /> // Ajusta el tamaño aquí
           )}
         </button> */}
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center px-4">
           {/* Logo */}
           <div className="w-full flex justify-center">
-            <img src={Logo} alt="Logo" className="h-auto max-h-96 drop-shadow-[4px_4px_6px_rgba(0,0,0,0.7)]" />
+            <img
+              src={Logo}
+              alt="Logo"
+              className="h-auto max-h-96 drop-shadow-[4px_4px_6px_rgba(0,0,0,0.7)]"
+            />
           </div>
 
           {/* Texto debajo del logo */}
